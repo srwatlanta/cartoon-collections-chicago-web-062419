@@ -5,8 +5,9 @@ def roll_call_dwarves (names)
 end
 
 def summon_captain_planet (elements)
-  elements.each do |element|
-    element.capitalize << "!"
+  proper_element = []
+  elements.collect do |element|
+    proper_element = element.capitalize << "!"
   end
 end
 
